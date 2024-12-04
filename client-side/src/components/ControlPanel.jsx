@@ -1,9 +1,9 @@
 import React from 'react';
-import '../App.css';
+import '../css/Controller.css';
 const ControlPanel = props => {
     return (
         <div id="control" className="control">
-            <p>File Name: </p>
+            <p>Name</p>
             <input type="text" id="nameInput" defaultValue="Untitled"/>
         </div>
     );

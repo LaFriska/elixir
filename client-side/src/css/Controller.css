@@ -1,0 +1,23 @@
+
+
+.control{
+    display: flex;
+    background-color: var(--secondary-colour);
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 20px 20px 20px 20px;
+    align-items: center;
+}
+
+p{
+    font-family: arial, serif;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+input{
+    height: 25px;
+    border: 2px solid #7c7c7c;
+    border-radius: 5px;
+}
