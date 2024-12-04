@@ -1,6 +1,7 @@
 :root{
     --secondary-colour: #ffffff;
-    --font-colour: #454849
+    --font-colour: #454849;
+    --elixir-red: #b90000
 }
 
 input:focus,

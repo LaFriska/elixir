@@ -8,7 +8,8 @@
     margin-right: 0;
     padding: 10px 10px 10px 10px;
     align-items: center;
-    border-bottom: 1.5px solid #b90000;
+    border-bottom: 1.5px solid var(--elixir-red);
+    border-top: 1.5px solid var(--elixir-red);
 }
 
 p{

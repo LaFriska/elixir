@@ -1,0 +1,15 @@
+.logoContainer{
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+}
+h1{
+    font-family: "Courier New", serif;
+    margin-bottom: 0;
+    color: var(--elixir-red);
+}
+h3{
+    margin-top: 8px;
+    font-family: "Courier New", serif;
+    color: var(--elixir-red);
+    font-weight: normal;
+}
