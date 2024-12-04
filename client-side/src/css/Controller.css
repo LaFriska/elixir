@@ -1,6 +1,13 @@
-
-
 .control{
+    border-bottom: 1.5px solid var(--elixir-red);
+    border-top: 1.5px solid var(--elixir-red);
+    display: flex;
+    justify-content: space-between;
+}
+
+.control-left,
+.control-right
+{
     display: flex;
     background-color: var(--secondary-colour);
     margin-top: 0;
@@ -8,8 +15,6 @@
     margin-right: 0;
     padding: 10px 10px 10px 10px;
     align-items: center;
-    border-bottom: 1.5px solid var(--elixir-red);
-    border-top: 1.5px solid var(--elixir-red);
 }
 
 p{
@@ -20,7 +25,27 @@ p{
 }
 
 input{
-    height: 25px;
+    height: 20px;
     border: 1.5px solid #7c7c7c;
     border-radius: 5px;
+}
+
+button{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: arial, serif;
+    color: var(--font-colour);
+    font-size: 15px;
+    border: 1.5px solid #7c7c7c;
+}
+
+img{
+    height: 32px;
+    width: 32px;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+button:hover{
+    border: 1.5px solid var(--elixir-red);
 }
