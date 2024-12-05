@@ -17,7 +17,6 @@ function App() {
                           setWidth={setWidth}
                           setName={setName}
             />
-
         </div>
     );
 }
