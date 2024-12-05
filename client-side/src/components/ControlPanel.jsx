@@ -22,6 +22,23 @@ const DimensionInput = props => {
 }
 
 /**
+ * Represents the input field for setting the image name.
+ * @param props contains a setter method for retrieving the name when this field is changed.
+ */
+const NameInput = props => {
+    return (
+        <input type="text"
+               id="nameInput"
+               placeholder="Enter a name"
+               style={{width: "100px"}}
+               onChange={(e) => {
+                   props.set(e.target.value)
+               }}
+        />
+    )
+}
+
+/**
  * Represents the control panel toward the top of the webpage. Contains fields providing ways to
  * set names, dimensions etc for the image.
  * @param props contains setter methods as a way to retrieve information to the parent.
@@ -32,11 +49,11 @@ const ControlPanel = props => {
         <div id="control" className="control">
             <div id="control-left" className="control-left">
                 <p>Name</p>
-                <input type="text" id="nameInput" placeholder="Enter a name" style={{width: "100px"}}/>
+                <NameInput set={props.setName}/>
                 <p>Dimensions</p>
-                <DimensionInput set={props.setWidth}></DimensionInput>
+                <DimensionInput set={props.setWidth}/>
                 <p style={{paddingLeft: 5, paddingRight: 5}}>×</p>
-                <DimensionInput set={props.setHeight}></DimensionInput>
+                <DimensionInput set={props.setHeight}/>
             </div>
             <div id="control-right" className="control-right">
                 <button>Export to PNG</button>

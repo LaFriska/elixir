@@ -8,13 +8,16 @@ function App() {
     //Height and width of the canvas
     const [width, setWidth] = useState(8)
     const [height, setHeight] = useState(8)
+    const [name, setName] = useState("untitled")
 
     return (
         <div>
-            <Logo></Logo>
+            <Logo/>
             <ControlPanel setHeight={setHeight}
-                          setWidth={setWidth}>
-            </ControlPanel>
+                          setWidth={setWidth}
+                          setName={setName}
+            />
+
         </div>
     );
 }
