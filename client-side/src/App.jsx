@@ -5,6 +5,9 @@ import {useEffect, useState} from "react";
 
 function App() {
 
+    //Picture grid
+    let picture = initialisePicture()
+
     //Height and width of the canvas
     const [width, setWidth] = useState(8)
     const [height, setHeight] = useState(8)
@@ -19,6 +22,18 @@ function App() {
             />
         </div>
     );
+}
+
+function initialisePicture(w, h, defaultValue){
+    let res = []
+    for(let i = 0; i < h; i++){
+        let temp = []
+        for(let i = 0; i < w; i++){
+            temp.push(defaultValue)
+        }
+        res.push(temp)
+    }
+    return res;
 }
 
 export default App;
